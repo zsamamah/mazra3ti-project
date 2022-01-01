@@ -1,0 +1,32 @@
+#introPage_Container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#introPage_Container img{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    
+}
+#introPage_Container>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    font-weight: 800;
+}
+#introPage_Container>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.homePage_heading{
+    text-align: center;
+    margin:1em;
+    font-size: 2.8em;
+    text-shadow: 1px 7px 14px rgb(131 131 131);
+}

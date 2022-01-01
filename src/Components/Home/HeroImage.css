@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* * {
+  font-weight: 800;
+} */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bolder;
+}
+
+html {
+  width: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.Home {
+  background-image: url("../../assets/farm.jpg");
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.overlay {
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.192);
+  font-weight: 700;
+}
+
+.intro-text {
+  color: var(--s_teal);
+  text-shadow: #fff;
+}
+.intro-h {
+  color: var(--s_teal);
+  font-size: 3.5em;
+  text-shadow: rgba(2, 2, 2, 0.952) 1px 1px 5px;
+}
+
+.intro-p {
+  color: var(--body_text);
+  text-align: center;
+  font-size: 1.5em;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 50%;
+    width: 110%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 93%;
+  }
+  0% {
+    background-color: var(--p_light);
+  }
+  100% {
+    background-color: var(--p_light);
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 40%;
+  justify-content: space-around;
+  margin-left: 10%;
+  text-align: justify;
+}
+.intro-button {
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+  background-color: var(--p_light);
+  color: var(--body_text);
+  font-weight: bold;
+  width: fit-content;
+  box-shadow: darkblue;
+  border: none;
+}
+
+.intro-button:hover {
+  background-color: var(--s_light);
+  color: var(--p_dark);
+  transition: background-color 400ms linear;
+}
+@media screen and (max-width: 800px) {
+  .intro-h {
+    font-size: 2.5em;
+  }
+  .intro-p {
+    font-size: 1em;
+    width: 110%;
+  }
+  @keyframes slidein {
+    from {
+      margin-right: 60%;
+      width: 110%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 110%;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .main {
+    font-size: 1em;
+    width: 100%;
+  }
+  .intro-h {
+    font-size: 2em;
+  }
+  .intro-p {
+    font-size: 0.9em;
+    width: 90%;
+  }
+  @keyframes slidein {
+    from {
+      margin-right: 60%;
+      width: 90%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 1121px) {
+  br {
+    display: none;
+  }
+}

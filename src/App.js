@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import Nav from './Components/NavBar/Nav';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home';
+
 
 function App() {
+  // https://tillable.com/
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Nav/>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/register" element={null} />
+      <Route path="/login" element={null} />
+      <Route path="/farms" element={null} />
+      <Route path="/singleFarm" element={null} />
+      <Route path="/checkout" element={null} />
+    </Routes>
+    </>
   );
 }
 
