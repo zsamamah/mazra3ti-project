@@ -1,0 +1,49 @@
+.farm_card{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border: 1px solid black;
+    margin: 1em;
+    font-weight: 600;
+    width: 70%;
+}
+.farm_location_price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:0;
+    margin-bottom: 0.7em;
+}
+.farm_features{
+    margin-top: 1em;
+}
+.farm_card ul{
+    list-style-type: none;
+}
+.farm_location i{
+    color: red;
+}
+.farm_price i,.farm_phone i{
+    color: green;
+}
+.farm_features i{
+    color: gold;
+}
+.farm_image img{
+    width: 100%;
+    height: 100%;
+}
+.farm_image{
+    width: 50%;
+    background-color: red;
+}
+.farm_data{
+    margin-left: 1em;
+}
+.view_farm_btn{
+    padding:0.5em;
+    background-color: var(--p_footer);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}

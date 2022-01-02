@@ -1,9 +1,12 @@
-import logo from './logo.png';
-import './App.css';
 import Nav from './Components/NavBar/Nav';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
-
+import Register from './Components/Register/Register';
+import Login from './Components/Login/Login';
+import Footer from './Components/Footer/Footer';
+import Farm from './Components/Farm/Farm';
+import './App.css';
+import Farms from './Components/Farms/Farms';
 
 function App() {
   // https://tillable.com/
@@ -12,12 +15,13 @@ function App() {
     <Nav/>
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/register" element={null} />
-      <Route path="/login" element={null} />
-      <Route path="/farms" element={null} />
-      <Route path="/singleFarm" element={null} />
+      <Route path="/register" element={<Register/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/farms" element={<Farms/>} />
+      <Route path="/farm" element={<Farm/>} />
       <Route path="/checkout" element={null} />
     </Routes>
+    <Footer/>
     </>
   );
 }

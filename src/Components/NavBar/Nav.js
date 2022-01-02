@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Nav.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import Logo from "../../logo.png";
 
@@ -48,13 +48,13 @@ export default function Nav() {
   };
 
   const [isLogged, setIsLogged] = useState("test");
-  React.useEffect(() => {
-    if (!localStorage.getItem("logged_in")) {
+  useEffect(() => {
+    if (localStorage.getItem("logged_in")) {
       setIsLogged("Account");
     } else {
       setIsLogged("Login");
     }
-  },[]);
+  }, []);
   return (
     <div className="Nav navContainer">
       <div className="Nav logoContainer">
@@ -69,14 +69,19 @@ export default function Nav() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li className={state.class1}>
-            <NavLink to="/farms">Gallery</NavLink>
+            <NavLink to="/farms">Farms</NavLink>
           </li>
-          <li className={state.class1}>
+          {/* <li className={state.class1}>
             <NavLink to="/checkout">Checkout</NavLink>
-          </li>
+          </li> */}
           <li className={state.class1}>
             <NavLink to="/login">{isLogged}</NavLink>
           </li>
+          {
+            isLogged==='Login'?<li className={state.class1}>
+              <NavLink to='/register'>Register</NavLink>
+            </li>:null
+          }
         </div>
       </ul>
     </div>

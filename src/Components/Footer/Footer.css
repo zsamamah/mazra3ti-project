@@ -1,3 +1,6 @@
+footer{
+    margin-top: 10em;
+}
 #footer_hr{
     margin:1em 0;
 }
@@ -42,8 +45,8 @@
     flex-direction: row;
     column-gap: 1em;
 }
-#contact_details p{
-    font-weight: 700;
+#contact_details i{
+    margin-right: 0.3em;
 }
 #contact_details{
     display: flex;

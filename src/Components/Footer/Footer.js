@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function footer() {
   return (
-    <>
+    <footer>
       <hr id="footer_hr" />
       <div id="footer_container">
         <div className="footer_list">
@@ -34,7 +34,7 @@ function footer() {
         </div>
         <div className="footer_list">
           <p>Resources</p>
-          <ul>
+          <ul id="contact_details">
             <li>
               <a href="https://www.whatsapp.com">
                 <i className="far fa-phone fontawesome_link"></i>+962777684935
@@ -62,7 +62,7 @@ function footer() {
                   <li>Privacy</li>
                   <li>Terms</li>
                   <li>Data Policy</li>
-                  <li>Sitemam</li>
+                  <li>Sitemap</li>
               </ul>
           </div>
         <div id="social_media_container">
@@ -88,7 +88,7 @@ function footer() {
         © 2021 Tillable, Inc. All Rights Reserved
         </div>
       </div>
-    </>
+    </footer>
   );
 }
 

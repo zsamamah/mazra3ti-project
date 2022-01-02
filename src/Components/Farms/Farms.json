@@ -1,0 +1,50 @@
+[
+    {
+        "id":"0",
+        "name":"Sana Farm",
+        "location":"Jerash",
+        "phone":"0777654325",
+        "price":"120",
+        "link":"https://jo.opensooq.com/en/search/163438256/%D8%B3%D9%86%D8%A7%D9%81%D8%A7%D8%B1%D9%85-sanafarm-%D9%85%D8%B2%D8%B1%D8%B9%D9%87-%D8%B4%D8%A7%D9%84%D9%8A%D9%87-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D8%AC%D8%B1%D8%B4-%D9%82%D8%B1%D8%A8-%D8%AC%D8%A7%D9%85%D8%B9%D9%87-%D9%81%D9%8A%D9%84%D8%A7%D8%AF%D9%84%D9%81%D9%8A%D8%A7",
+        "images":[
+            "https://opensooq-images.os-cdn.com/previews/560x400/4f/06/4f066f31f9d888e4a6a13cf8c05782290428d458f3190fdc1551a49a9031723b.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/0e/0f/0e0f6a3394f9bf20c8011f56ca7456f7767ebaf790bce3d1e06fbf4e71f08d70.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/cc/ac/ccac5138283d52d7c38f73746ef540533a82c82290e348d2e96c665cf74a7fda.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/d7/81/d781672f7d4f16c0e958762ae69ae6c2de6ed368725b62750b8dadffca60e77d.jpg.webp"
+        ],
+        "accessories":["Amazing Views","Swimming Pool","BBQ","Billiard table","Fully Equipped"]
+    },
+    {
+        "id":"1",
+        "name":"Iylas Chalet",
+        "location":"Dead Sea",
+        "phone":"0792820420",
+        "price":"130",
+        "link":"https://jo.opensooq.com/en/search/163256906/lylas-chalet-%D9%85%D8%B2%D8%B1%D8%B9%D9%87-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1",
+        "images":[
+            "https://opensooq-images.os-cdn.com/previews/560x400/a9/b9/a9b908126c112bc939eb1c496f4169918033313d9e51e0af881fc28aeaaca16a.jpg.jpg",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/e1/57/e15757a4ad5f29e412c52a4f0815076330c51dcf7a1b4155327ac5c722d15342.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/ec/d7/ecd7c81b2ab0921c28bb3c4c2d06e6a6a87e8c6262c73f06ea32cde30c87e155.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/98/8a/988aecc437f7413e5253c46f6166598beaa29c4daa1ba43edefff755a89e58e8.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/e0/d9/e0d952cbc4a898e05eb719d0da7ea89bc3f524fcdc261cc315d781da43870597.jpg.webp"
+
+        ],
+        "accessories":["Amazing Views","Swimming Pool","BBQ","Two Bedrooms","DJ Stereo"]
+    },
+    {
+        "id":"2",
+        "name":"Mango Farm",
+        "location":"Salt",
+        "phone":"0772240957",
+        "price":"100",
+        "link":"https://jo.opensooq.com/en/search/165578344/%D9%81%D9%8A%D9%84%D8%A7-%D9%85%D9%81%D8%B1%D9%88%D8%B4%D9%87-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1",
+        "images":[
+            "https://opensooq-images.os-cdn.com/previews/560x400/f4/06/f4060371c4b2d92a83b49a556926f4f1798727a52b8460b6185f6b835ba1fbb9.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/6d/02/6d025aba319fe2bcd8a28f97035fea9e093426190dd4f13efe31ef14b42e7bb9.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/c6/8e/c68efee6d3e20060f08f623af7be7a1c7e5646770d0eae54f24bb418eb261af0.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/7b/53/7b53b4a26e8c3ba453c449cc03f6ba28631206581d69c46183841bf773b1febe.jpg.webp",
+            "https://opensooq-images.os-cdn.com/previews/1024x0/87/1e/871e4c603c4aad846fd2644f0432eff455dad4fa23b8fecf9e55d3b0fe2fc598.jpg.webp"
+        ],
+        "accessories":["Fire Place","Swimming Pool","BBQ","Three Bedrooms","Fully Equipped"]
+    }
+]
