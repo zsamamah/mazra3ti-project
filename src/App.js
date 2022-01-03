@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import Farm from './Components/Farm/Farm';
 import './App.css';
 import Farms from './Components/Farms/Farms';
+import Checkout from './Components/Checkout/Checkout';
 
 function App() {
   // https://tillable.com/
@@ -19,7 +20,7 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route path="/farms" element={<Farms/>} />
       <Route path="/farm" element={<Farm/>} />
-      <Route path="/checkout" element={null} />
+      <Route path="/checkout" element={<Checkout/>} />
     </Routes>
     <Footer/>
     </>

@@ -68,23 +68,6 @@
     max-height: 67px;
   }
   
-  .myCarousel p:before {
-    content: "“";
-    color: #aaa;
-    font-size: 26px;
-    font-family: monospace;
-    font-weight: 100;
-  }
-  
-  .myCarousel p:after {
-    content: "”";
-    color: #aaa;
-    font-size: 26px;
-    font-family: monospace;
-    font-weight: 100;
-    line-height: 0;
-  }
-  
   .carousel .control-dots .dot {
     box-shadow: none !important;
     background: #454545 !important;
