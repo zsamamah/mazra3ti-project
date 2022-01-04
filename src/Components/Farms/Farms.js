@@ -8,6 +8,7 @@ function Farms() {
 
     useEffect(() => {
         localStorage.removeItem('farm_id')
+        localStorage.removeItem('temp')
     }, [])
 
     const viewFarm = (key)=>{

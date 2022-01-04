@@ -1,0 +1,20 @@
+#please_login{
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    gap: 1em;
+}
+#please_login button{
+    padding: 0.3em;
+    font-size: 1em;
+    border: none;
+    background-color: var(--p_light);
+    color: white;
+    border-radius: 0.2em;
+}
+#please_login button:hover{
+    background-color: var(--p_footer);
+}
