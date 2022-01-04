@@ -15,6 +15,10 @@
     padding:2em;
     width: 30em;
 }
+#register_form>div{
+    display: flex;
+    flex-direction: column;
+}
 #register_form label{
     font-weight: 600;
 }
@@ -45,4 +49,9 @@
 #register_header{
     margin-bottom: 1em;
     color: var(--p_footer);
+}
+@media only screen and (max-width:600px) {
+    #register_form{
+        width: 70%;
+    }    
 }

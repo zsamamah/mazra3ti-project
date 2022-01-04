@@ -27,6 +27,13 @@
 .homePage_heading{
     text-align: center;
     margin:1em;
-    font-size: 2.8em;
+    font-size: 2.2em;
+    font-weight: 800;
     text-shadow: 1px 7px 14px rgb(131 131 131);
+}
+@media only screen and (max-width:500px){
+    #introPage_Container{
+        flex-direction: column-reverse;
+        row-gap: 1em;
+    }
 }

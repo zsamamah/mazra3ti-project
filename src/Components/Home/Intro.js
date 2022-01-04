@@ -5,7 +5,7 @@ import mockup_image from '../../assets/intro.jpg';
 function Intro() {
     return (
         <>
-        <h1 className='homePage_heading'>Get Started With a Free Account.</h1>
+        <p className='homePage_heading'>Get Started With a Free Account.</p>
         <div id="introPage_Container">
             <div>
                 <div><h2>Meet The First 100% Online Farm Reservation</h2></div>

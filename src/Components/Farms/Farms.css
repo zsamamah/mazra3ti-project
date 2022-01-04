@@ -3,7 +3,7 @@
     flex-direction: row;
     /* justify-content: space-between; */
     border: 1px solid black;
-    margin: 1em;
+    margin: 1em auto;
     font-weight: 600;
     width: 70%;
 }
@@ -34,7 +34,6 @@
 }
 .farm_image{
     width: 50%;
-    background-color: red;
 }
 .farm_data{
     margin-left: 1em;
@@ -46,4 +45,19 @@
     border: none;
     border-radius: 0.5em;
     margin-top: 1em;
+}
+@media only screen and (max-width:800px) {
+    .farm_card{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .view_farm_btn{
+        width: 50%;
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+    }
+    .farm_image{
+        width: 90%;
+    }
 }

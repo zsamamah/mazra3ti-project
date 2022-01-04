@@ -1,5 +1,5 @@
 footer{
-    margin-top: 10em;
+    margin-top: 5em;
 }
 #footer_hr{
     margin:1em 0;
@@ -73,4 +73,29 @@ footer{
     width: 80%;
     margin: 0 auto;
     margin-top: 0.5em;
+}
+@media only screen and (max-width: 700px){
+    #footer_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 1em;
+        row-gap: 1em;
+    }
+    #lastLine_footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+@media only screen and (max-width: 400px){
+    #footer_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:2em;
+    }
+    .footer_list2>ul{
+        flex-direction: column;
+        gap: 1em;
+    }
 }

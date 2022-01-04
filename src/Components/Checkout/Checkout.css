@@ -18,3 +18,72 @@
 #please_login button:hover{
     background-color: var(--p_footer);
 }
+#checkout_form{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-weight: 600;
+}
+#checkout_form>div{
+    margin: 0 auto;
+    background-color: rgb(77 218 205 / 10%);
+    padding: 3em;
+    border-radius: 2em;
+}
+#checkout_form input{
+    /* width: 15em; */
+    padding: 0.8em;
+    font-size: 1.1em;
+}
+#checkout_form table{
+    text-align: start;
+    width: 70%;
+}
+#checkout_form #coupon{
+    width: 20%;
+    padding: 0;
+}
+#submit_coupon{
+    font-size: 1em;
+    border: none;
+    color: white;
+    background-color: rgb(75, 75, 250);
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+#submit_checkout{
+    padding:0.5em 0.2em;
+    margin: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.2em;
+    background-color: var(--p_footer);
+    color: white;
+}
+@media only screen and (max-width:800px){
+    #checkout_form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+@media only screen and (max-width:400px){
+    #checkout_form>div{
+        padding: 1em;
+    }
+    #checkout_form input{
+        padding: 0;
+        width: 70%;
+    }
+    #checkout_form #coupon{
+        width: 70%;
+        margin-bottom: 0.5em;
+    }
+    #submit_checkout{
+        margin-bottom: 0.8em;
+    }
+    #payment input{
+        width: 1em;
+    }
+}

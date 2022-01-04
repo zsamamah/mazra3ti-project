@@ -9,7 +9,7 @@ import image3 from "../../assets/home/p3.png";
 function Testimonials() {
   return (
     <>
-    <h1 className='homePage_heading'>Testimonials</h1>
+    <p className='homePage_heading'>Testimonials</p>
     <Carousel
       showArrows={true}
       infiniteLoop={true}

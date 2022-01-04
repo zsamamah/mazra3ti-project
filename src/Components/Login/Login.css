@@ -49,9 +49,58 @@
 }
 .login_register_flip{
     margin-top: 1em;
+    margin-bottom: 5em;
 }
 .login_register_flip a{
     text-decoration: none;
     font-weight: 600;
     color: var(--p_footer);
+}
+.loginForm>div{
+    display: flex;
+    flex-direction: column;
+}
+#profileContainer {
+    margin: 1em 0;
+  }
+  #profileContainer img {
+    width: 10em;
+    border-radius: 50%;
+  }
+  #userProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .dataContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  #logoutBtn {
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(223, 9, 9);
+  }
+  #logoutBtn:hover {
+    background-color: rgb(237, 21, 21);
+  }
+@media only screen and (max-width:400px) {
+    #loginForm{
+        width: 10em;
+    }
+    #userProfile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dataContainer{
+        align-items: center;
+      }
+    
 }

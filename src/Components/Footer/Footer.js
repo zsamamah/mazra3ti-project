@@ -33,7 +33,7 @@ function footer() {
           </ul>
         </div>
         <div className="footer_list">
-          <p>Resources</p>
+          <p>Contact</p>
           <ul id="contact_details">
             <li>
               <a href="https://www.whatsapp.com">
@@ -85,7 +85,7 @@ function footer() {
           </ul>
         </div>
         <div>
-        © 2021 Tillable, Inc. All Rights Reserved
+        <p>© 2021 Tillable, Inc. All Rights Reserved</p>
         </div>
       </div>
     </footer>

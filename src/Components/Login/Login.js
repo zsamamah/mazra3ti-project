@@ -3,6 +3,7 @@ import "./Login.css";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../logo.png";
+import temp from '../../assets/temp_man.jpg'
 
 function Login() {
   const navigate = useNavigate();
@@ -87,6 +88,7 @@ function Login() {
   const logout = ()=>{
     localStorage.removeItem('logged_in');
     setUser(null)
+    window.location.reload(false);
   }
 
   if(!user)
@@ -100,20 +102,18 @@ function Login() {
       </div>
       <form onSubmit={handleLogin} id="loginForm">
         <div>
-          <label htmlFor="email">Email Address : </label>
-          <br />
-          <input type="email" id="email" onChange={handleData} required />
+          <div><label htmlFor="email">Email Address : </label></div>
+          <div><input type="email" id="email" onChange={handleData} required /></div>
         </div>
         <div>
-          <label htmlFor="password">Password : </label>
-          <br />
-          <input
+          <div><label htmlFor="password">Password : </label></div>
+          <div><input
             type="password"
             id="password"
             onChange={handleData}
             minLength="5"
             required
-          />
+          /></div>
         </div>
         <div>
           <button type="submit" id="submit_login_form">
@@ -131,8 +131,21 @@ function Login() {
   else{
     return(
       <div>
-        <h1>you logged in</h1>
-        <button onClick={logout}>Logout</button>
+        <h1>Hello {user.fname}</h1>
+        <div id="profileContainer">
+                <div id="userProfile">
+                <div><img src={temp} alt="user Profile"/></div>
+                <div className="dataContainer">
+                <div><p>Full Name : {user.fname} {user.lname}</p></div>
+                <div><p id="email_account">Email Address: {user.email}</p></div>
+                <div>
+                <form onSubmit={logout}>
+                <button type="submit" id="logoutBtn">Log out !</button>
+                </form>
+               </div>
+            </div>
+            </div>
+            </div>
       </div>      
     )
   }

@@ -121,6 +121,9 @@ body {
   }
 }
 @media screen and (max-width: 550px) {
+  .Home,.overlay{
+    height: 70vh;
+  }
   .main {
     font-size: 1em;
     width: 100%;

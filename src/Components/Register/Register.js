@@ -69,6 +69,8 @@ function Register() {
             icon: 'error',
             title: "Email Found !",
             text: "Your email was found in our database",
+          }).then(function(){
+            navigate('/login')
           })
       }
       else{
@@ -89,28 +91,28 @@ function Register() {
       </div>
       <form onSubmit={validate} id="register_form">
         <div>
-          <label htmlFor="fname">First Name : </label>
-          <input type="text" id="fname" onChange={handleInput} minLength='3' required/>
+          <div><label htmlFor="fname">First Name : </label></div>
+          <div><input type="text" id="fname" onChange={handleInput} minLength='3' required/></div>
         </div>
         <div>
-          <label htmlFor="lname">Last Name : </label>
-          <input type="text" id="lname" onChange={handleInput} minLength='3' required/>
+          <div><label htmlFor="lname">Last Name : </label></div>
+          <div><input type="text" id="lname" onChange={handleInput} minLength='3' required/></div>
         </div>
         <div>
-          <label htmlFor="email">Email Address : </label>
-          <input type="email" id="email" onChange={handleInput} required/>
+          <div><label htmlFor="email">Email Address : </label></div>
+          <div><input type="email" id="email" onChange={handleInput} required/></div>
         </div>
         <div>
-          <label htmlFor="phone">Phone : </label>
-          <input type="tel" id="phone" onChange={handleInput} minLength='10' required/>
+          <div><label htmlFor="phone">Phone : </label></div>
+          <div><input type="tel" id="phone" onChange={handleInput} minLength='10' required/></div>
         </div>
         <div>
-          <label htmlFor="password">Password : </label>
-          <input type="password" id="password" onChange={handleInput} minLength='5' required/>
+          <div><label htmlFor="password">Password : </label></div>
+          <div><input type="password" id="password" onChange={handleInput} minLength='5' required/></div>
         </div>
         <div>
-          <label htmlFor="c_password">Confirm Password : </label>
-          <input type="password" id="c_password" onChange={handleInput} minLength='5' required/>
+          <div><label htmlFor="c_password">Confirm Password : </label></div>
+          <div><input type="password" id="c_password" onChange={handleInput} minLength='5' required/></div>
         </div>
         <div>
           <button type="submit" id="submit_register_form">Register</button>
