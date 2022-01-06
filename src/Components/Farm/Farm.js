@@ -35,7 +35,6 @@ function Farm() {
       };
     const inquire = (e)=>{
         e.preventDefault();
-        // localStorage.setItem('temp',JSON.stringify([rangeDate.from_date,rangeDate.to_date]))
         let from = new Date(rangeDate.from_date);
         let to = new Date(rangeDate.to_date);
         let days = getDaysBetweenDates(from, to);
@@ -46,11 +45,9 @@ function Farm() {
         }
         if (!localStorage.getItem(`farm${farmID}`)) {
             localStorage.setItem(`temp`, JSON.stringify(range_dates));
-            // alert("Done !");
             Swal.fire({
                 icon: "success",
                 title: "Go To Checkout",
-                // text: `${reserved_dates}`,
               }).then(
                 function(){
                     navigate("/checkout")
@@ -68,18 +65,15 @@ function Farm() {
             }
             if (!found) {
               localStorage.setItem(`temp`, JSON.stringify(range_dates));
-            //   alert("Done !");
             Swal.fire({
                 icon: "success",
                 title: "Go To Checkout",
-                // text: `${reserved_dates}`,
               }).then(
                   function(){
                     navigate("/checkout")
                   }
               )
             } else {
-            //   alert(`car reserved in ${reserved_dates}`);
             Swal.fire({
                 icon: "error",
                 title: "Farm Reserved In these dates",
@@ -93,15 +87,10 @@ function Farm() {
 
 
   useEffect(() => {
-    // setFarmID(localStorage.getItem("farm_id"));
     if (farmID === null || farmID === undefined){
         navigate('/farms')
     }
   },[]);
-
-  const to_checkout = ()=>{
-      navigate('/checkout')
-  }
 
   if (farmID === null || farmID === undefined) {
       return (
@@ -122,7 +111,6 @@ function Farm() {
           <Carousel
             showArrows={true}
             infiniteLoop={true}
-            // showThumbs={false}
             showStatus={false}
             autoPlay={true}
             interval={6100}
@@ -168,27 +156,26 @@ function Farm() {
                 </ul>
             </div>
             <div className="cart_btn">
-                {/* <button id="to_checkout_btn" type="button" onClick={to_checkout}>Checkout</button> */}
             </div>
         </div>
       </div>
       <div>
-          <form onSubmit={inquire}>
+          <form id="reservation_form" onSubmit={inquire}>
           <div>
-          <label htmlFor="from_date">Beginning Of : </label>
-          <input type='date' id='from_date' min={today} onChange={handleDate} required/>
+          <div>
+          <div><label htmlFor="from_date">Beginning Of : </label></div>
+          <div><input type='date' id='from_date' min={today} onChange={handleDate} required/></div>
           </div>
           <div>
-              <label htmlFor="to_date">End Of : </label>
-              <input type='date' id='to_date' min={rangeDate.from_date} onChange={handleDate} required/>
+              <div><label htmlFor="to_date">End Of : </label></div>
+              <div><input type='date' id='to_date' min={rangeDate.from_date} onChange={handleDate} required/></div>
           </div>
           <div>
               <button type="submit" id="to_checkout_btn">Inquire</button>
           </div>
-          </form>
-      </div>
+          </div>
             {
-                reserved!==null?<div>
+                reserved!==null?<div id='reservation_area'>
                 <h1>Reserved In : </h1>
                 {reserved.map((el,index)=>{
                     return(
@@ -197,6 +184,8 @@ function Farm() {
                 })}
                 </div>:null
             }
+          </form>
+      </div>
       </>
     );
   }

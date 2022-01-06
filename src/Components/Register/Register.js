@@ -118,7 +118,7 @@ function Register() {
           <button type="submit" id="submit_register_form">Register</button>
         </div>
       </form>
-      <div className="login_register_flip">
+      <div id='login_link' className="login_register_flip">
         <p>Already have account? <Link to='/login'>Sign In</Link></p>
       </div>
     </div>

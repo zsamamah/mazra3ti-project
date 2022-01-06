@@ -6,7 +6,7 @@ function HeroImage() {
     const navigate = useNavigate();
 
     const toFarms= ()=>{
-        navigate('/gallery')
+        navigate('/farms')
     }
 
 

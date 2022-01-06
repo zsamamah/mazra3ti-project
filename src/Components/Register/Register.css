@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30em;
+    height: 40em;
     padding-top: 4em;
 }
 #register_form{
@@ -41,6 +41,7 @@
 }
 #logo_registerPage{
     height: 10em;
+    margin-top: 10em;
 }
 #logo_registerPage img{
     width: 100%;
@@ -49,6 +50,9 @@
 #register_header{
     margin-bottom: 1em;
     color: var(--p_footer);
+}
+#login_link{
+    padding-bottom: 5em;
 }
 @media only screen and (max-width:600px) {
     #register_form{

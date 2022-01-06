@@ -85,11 +85,13 @@ body {
   text-align: justify;
 }
 .intro-button {
-  padding: 0.5em 1em;
+  padding: 1.3em;
   border-radius: 1.5em;
   background-color: var(--p_light);
-  color: var(--body_text);
+  color: white;
+  background-color: var(--p_footer);
   font-weight: bold;
+  font-size: 1em;
   width: fit-content;
   box-shadow: darkblue;
   border: none;
