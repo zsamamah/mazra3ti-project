@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import Slider from "../Slider/Slider";
 
 function Farm() {
     const navigate = useNavigate()
@@ -99,7 +100,6 @@ function Farm() {
       </div>
     );
   } else {
-    let images = farm.images;
     let acc = farm.accessories;
     return (
         <>
@@ -108,7 +108,8 @@ function Farm() {
               <h1>{farm.name}</h1>
           </div>
         <div id="cart_slider">
-          <Carousel
+          <Slider images={farm.images} link={farm.link}/>
+          {/* <Carousel
             showArrows={true}
             infiniteLoop={true}
             showStatus={false}
@@ -122,7 +123,7 @@ function Farm() {
                 </div>
               );
             })}
-          </Carousel>
+          </Carousel> */}
         </div>
         <div className="cart_data">
             <div className="cart_price">

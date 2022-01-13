@@ -1,0 +1,56 @@
+.heroImageContainer{
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+.heroImageContainer .shopNowBtn{
+    background-color: var(--grayBlue);
+    color: var(--white);
+    margin: 0 auto 20px auto;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.heroImageContainer .shopNowBtn a{
+    text-decoration: none;
+    color: unset;
+}
+.heroImageContainer .shopNowBtn:hover{
+    background-color: var(--darkBlue);
+}
+.toggeleSlider{
+    display: flex;
+    justify-content: center;
+}
+.toggeleSlider button{
+    cursor: pointer;
+    border:1px solid gray;
+    background-color: var(--body_text);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin:10px;
+}
+.buttonsArea{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    .buttonsArea{
+        font-size: 0.7em;
+    }
+}

@@ -1,23 +1,49 @@
-import React from 'react';
-import image1 from '../../images/image1.jfif';
-import image2 from '../../images/image2.jpg';
-import image3 from '../../images/image3.jfif';
-import image4 from '../../images/image4.jfif';
-import SimpleImageSlider from 'react-simple-image-slider';
+import React,{useEffect,useState} from 'react';
+import "./Slider.css";
 
-const images=[
-  {url:image1},
-  {url:image2},
-  {url:image3},
-  {url:image4}
-]
+function Slider(props) {
+    const [state, setState] = useState({
+        arrayOfImages: props.images,
+        currentImgLink:
+        props.images[0],
+        imgArrCounter:0,
+      }
+  )
+  useEffect(() => {
+    const interval = setInterval(timer, 2000);
+    function timer() {
+      if (state.currentImgLink === state.arrayOfImages[state.imgArrCounter]) {
+          setState({
+            ...state,
+            imgArrCounter: ++state.imgArrCounter,
+          });
+      } 
+      if(state.imgArrCounter===state.arrayOfImages.length){
+        setState({
+          ...state,
+          imgArrCounter:0
+        })
+      }
+      else {
+        setState({
+          ...state,
+          currentImgLink: state.arrayOfImages[state.imgArrCounter],
+        });
+      }
+    }
+    return () => {
+      clearInterval(interval);
+    };
+  });   
 
-function Slider() {
-    return (
-        <div>
-            <SimpleImageSlider width={500} height={300} images={images} showBullets={true} showNavs={true} />
+      return (
+        <a href={props.link}>
+          <div
+          className="heroImageContainer"
+          style={{ backgroundImage: `url(${state.currentImgLink})` }}
+        >
         </div>
-    )
+        </a>
+      );
 }
-
 export default Slider
