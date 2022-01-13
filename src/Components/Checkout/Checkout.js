@@ -117,15 +117,15 @@ function Checkout() {
                 <div>
                 <div>
                 <div><label htmlFor='fname'>First Name : </label></div>
-                <div><input type='text' id='fname' value={user.fname} onChange={handleData} required/></div>
+                <div><input type='text' id='fname' placeholder={user.fname} onChange={handleData} required/></div>
                 </div>
                 <div>
                     <div><label htmlFor='lname'>Last Name : </label></div>
-                    <div><input type='text' id='lname' value={user.lname} onChange={handleData} required/></div>
+                    <div><input type='text' id='lname' placeholder={user.lname} onChange={handleData} required/></div>
                 </div>
                 <div>
                     <div><label htmlFor='email'>Email : </label></div>
-                    <div><input type='email' id='email' value={user.email} disabled/></div>
+                    <div><input type='email' id='email' placeholder={user.email} disabled/></div>
                 </div>
                 <div>
                     <div><label htmlFor='phone'>Phone : </label></div>
@@ -179,17 +179,17 @@ function Checkout() {
                 </div>
                 <div style={{display:visa}}>
                     <div>
-                    <label htmlFor='card_num'>Card number : </label>
-                    <input type='number' id='card_num' min='0' minLength='16' maxLength='16' placeholder='xxxx-xxxx-xxxx-xxxx' />
-                    </div>
+                    <label htmlFor='card_num'>Card number : </label></div>
+                    <div><input type='number' id='card_num' min='0' minLength='16' maxLength='16' placeholder='xxxx-xxxx-xxxx-xxxx' /></div>
+                    
                     <div>
-                        <label htmlFor='exp_date'>Exp Date : </label>
-                        <input type='month' id='exp_date'/>
-                    </div>
+                        <label htmlFor='exp_date'>Exp Date : </label></div>
+                        <div><input type='month' id='exp_date'/></div>
+                    
                     <div>
-                        <label htmlFor='password'>Exp Date : </label>
-                        <input type='password' minLength='3' maxLength='3' />
-                    </div>
+                        <label htmlFor='password'>Exp Date : </label></div>
+                        <div><input type='password' minLength='3' maxLength='3' /></div>
+                    
                 </div>
                 {/* time / how many persons / payment method /  */}
                 <button type='submit' id='submit_checkout'>Reserve Now</button>
